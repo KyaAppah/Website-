@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>
+<title>RE2 Complete Guide</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
+<style>
+body  {
+  background-image: url("https://images.pexels.com/photos/695644/pexels-photo-695644.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+}
+</style>
+<style>
+p.padding {
+  padding-top: 2cm;
+}
+
+p.padding2 {
+  padding-top: 3%;
+}
+</style>
+</head>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Algreya";}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://www.amd.com/system/files/2018-11/184189-re2-key-art-1920x800.jpg');
+  min-height: 100%;
+}
+
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+<body>
+<style>
+body {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 15%;
+  background-image: url("bg.jpg");
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+</style>
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+</style>
+  <!-- Avatar image in top left corner -->
+<ul>
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <p><font color="white">HOME</p>
+  </a>
+  <a href="char.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <p>CHARACTERS</p>
+  </a>
+  <a href="enemies.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <p>ENEMIES</p>
+  </a>
+  <a href="weapons.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <p>WEAPONS</p>
+  </a>
+  <a href="puzzle.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <p>PUZZLES</p>
+  </a>
+  <a href="modes.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <p>MODES</p>
+  <a href="easter.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <p>EASTER EGGS</p>
+  </a>
+  <a href="develop.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <p>DEVELOPERS</p>
+  <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <p>IMAGE GALLERY</p>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <p>THINK WE'RE MISSING SOMETHING?</p></font>
+  </a>
+  </a>
+  </a>
+  </a>
+</nav>
+</ul>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">The Complete Guide To</span>
+  </div>
+</div>
+
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-center w3-black">
+    <h1 class="w3-jumbo">The Characters</h1>
+    <h3><a href="#leon">The Main Characters</h3></a>
+    <p><a href="#leon">Leon S. Kennedy</p></a>
+    <p><a href="#claire">Claire Redfield</p></a>
+    <p><a href="#ada">Ada Wong</p></a>
+    <p><a href="#sherry">Sherry Birkin</p></a>
+    <h3><a href="#william">The Side Characters</h3></a>
+    <p><a href="#william">William Birkin</p></a>
+    <p><a href="#annette">Annette Birkin</p></a>
+    <p><a href="#brian">Brian Irons</p></a>
+    <p><a href="#marvin">Marvin Branagh</p></a>
+    <p><a href="#hunk">HUNK</p></a>
+    <p><a href="#tofu">Tofu</p></a>
+    <p><a href="#ben">Ben Bertolucci</p></a>
+    <p><a href="#robert">Robert Kendo</p></a>
+    <p><a href="#emma">Emma Kendo</p></a>
+    <p><a href="#elliot">Elliot Edward</p></a>
+    <p><a href="#katherine">Katherine Warren</p></a>
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 id="leon" class="w3-text-white">Leon S. Kennedy</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-text-light-grey">Leon Scott. Kennedy was a police academy cadet who became intrigued by a series of grizzly murders that occurred in Raccoon City. Upon graduating from the police academy, Leon quickly applied for a position at the Raccoon City Police Department, which was soon accepted due to his high test scores. Leon's first day as a member of Raccoon City's finest would also be his last, as upon reaching the city Leon became embroiled in what would later became known as The Raccoon City Incident.
+    </p>
+
+    <h3 class="w3-container w3-center w3-white">His Abilites</h3>
+    <p class="w3-wide">Intelligence</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"><center>80%</div></center>
+    </div>
+    <p class="w3-wide">Speed</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:85%"><center>85%</div></center>
+    </div>
+    <p class="w3-wide">Agility</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"><center>95%</div></center>
+    </div><br>
+    
+    
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-white">Gallery</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://pbs.twimg.com/media/Df-CAHkXkAECI5N.jpg" style="width:100%">
+        <img src="https://cdn.vox-cdn.com/thumbor/SmfEGuTAK05v4qbQ_N1cFUsrlcA=/0x0:3840x2160/1200x800/filters:focal(1101x628:1715x1242)/cdn.vox-cdn.com/uploads/chorus_image/image/62808333/RE2_Sept_Screen8.0.jpg" style="width:100%">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/intermediary/f/0276f574-98ea-4e2d-ba44-68f500bf01bc/dce77l1-2b54edae-3bcf-4451-96ee-aa26ce0cc3d9.jpg/v1/fill/w_1024,h_576,q_70,strp/resident_evil_2_remake_leon_s_kennedy_by_xgamergreaserx_dce77l1-fullview.jpg" style="width:100%">
+        <img src="https://c.wallhere.com/photos/d6/66/Resident_Evil_2_Remake_Resident_Evil_2_Resident_Evil_PlayStation_4_PlayStation_Capcom_Leon_S_Kennedy_biohazard-1549955.jpg!s" style="width:100%">
+      </div>
+      <div class="w3-half">
+        <img src="https://cdn.atomix.vg/wp-content/uploads/2018/12/LeonKennedy_ResidentEvil2_Remake_historia.jpg" style="width:100%">
+        <img src="https://www.obilisk.co/wp-content/uploads/2018/06/Leon-888x500.jpg" style="width:100%">
+        <img src="https://66.media.tumblr.com/d5e4a22dbafee11307bb13fd5a202100/tumblr_pjd8osXIuv1rqdof9o2_250.gif" style="width:100%">
+        <img src="https://i.pinimg.com/originals/15/38/05/153805bcd233c9283505cadb10426463.jpg" style="width:100%">
+      </div>
+<div>
+  <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</div>
+
+</div>
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 id="claire" class="w3-text-white">Claire Redfield</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-text-light-grey">Claire Redfield is a current member of the human rights organization, TerraSave. She is the younger sister of BSAA operative and former S.T.A.R.S. member Chris Redfield. Claire is a survivor of the Raccoon City Incident, which took place in September 1998 after she traveled to the city in search of her brother Chris Redfield. After escaping the city with the help of Leon S. Kennedy, Claire ventured to Europe to resume her search for Chris. In December, she was captured by Umbrella after infiltrating their Paris Laboratory and transported to the Umbrella owned Rockfort Island and imprisoned. When Rockfort Island was attacked by a mysterious Special Forces group, Claire tried to escape with a fellow prisoner, Steve Burnside, leading to both of their involvements in the Antarctic outbreak. Her brother soon learned of her situation and rescued her. In 2005, Claire confronted the t-Virus again when she arrived at Harvardville Airport to meet some friends. While surviving in the airport, she was reunited with Leon, now a U.S. Government agent, who had been sent to deal with the outbreak.
+    </p>
+
+    <h3 class="w3-container w3-center w3-white">Her Abilites</h3>
+    <p class="w3-wide">Intelligence</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:95%"><center>95%</div></center>
+    </div>
+    <p class="w3-wide">Speed</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:90%"><center>90%</div></center>
+    </div>
+    <p class="w3-wide">Agility</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"><center>80%</div></center>
+    </div><br>
+    
+    
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-white">Gallery</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://assets.vg247.com/current//2018/10/resident_evil_2_claire_aug_08.jpg" style="width:100%">
+        <img src="http://images.pushsquare.com/f9072dc555f97/how-to-fully-upgrade-all-of-claires-guns-in-resident-evil-2-guide-1.900x.jpg" style="width:100%">
+        <img src="https://www.mercurynews.com/wp-content/uploads/2018/12/Resident-Evil-24.jpg?w=620" style="width:100%">
+        <img src="http://thegeekiary.com/wp-content/uploads/2018/06/Resident-Evil-2-remake-claire.png" style="width:100%">
+      </div>
+      <div class="w3-half">
+        <img src="https://cdn.wccftech.com/wp-content/uploads/2018/06/Resident-Evil-2-Remake-OTS.jpg" style="width:100%">
+        <img src="https://www.vgr.com/wp-content/uploads/2018/09/resident-evil-2-remake-tgs-trailer-2-924x520.jpg" style="width:100%">
+        <img src="https://cdn.gamerant.com/wp-content/uploads/resident-evil-2-remake-claire-licker-1.jpg.optimal.jpg" style="width:100%">
+        <img src="https://i.imgur.com/gnf46Ms.gif" style="width:100%">
+      </div>
+
+</div>
+  <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 id="ada" class="w3-text-white">Ada Wong</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-text-light-grey">Ada Wong (エイダ・ウォン Eida Won?) is the pseudonym of an otherwise-unnamed red-clad, Asian-American of Chinese descent. Initially a private agent, Ada was drawn into the intrigue and treachery that is the corporate world when she was recruited by a rival company to participate in their activities against their primary rival, Umbrella, and later moved to another company.
+    </p>
+
+    <h3 class="w3-container w3-center w3-white">Her Abilites</h3>
+    <p class="w3-wide">Intelligence</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:98%"><center>98%</div></center>
+    </div>
+    <p class="w3-wide">Speed</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:75%"><center>75%</div></center>
+    </div>
+    <p class="w3-wide">Agility</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:80%"><center>80%</div></center>
+    </div><br>
+    
+    
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-white">Gallery</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://cdn.gamerant.com/wp-content/uploads/resident-evil-2-screenshots-ada-wong-header.jpg.optimal.jpg" style="width:100%">
+        <img src="https://cdn.gamerant.com/wp-content/uploads/resident-evil-2-story-trailer-ada-wong-reveal.jpg.optimal.jpg" style="width:100%">
+        <img src="https://images.gamewatcherstatic.com/image/file/3/7c/97293/large_20190120141108_1.jpg" style="width:100%">
+      </div>
+      <div class="w3-half">
+        <img src="https://www.jeuxactu.com/datas/jeux/r/e/resident-evil-2/vn/resident-evil-2-5c06e595d73f0.jpg" style="width:100%">
+        <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2018%2F09%2Fresident-evil-2-remake-trailer-ada-wong-1.jpg?fit=max&cbr=1&q=90&w=750&h=500" style="width:100%">
+        <img src="https://cdn.wccftech.com/wp-content/uploads/2018/12/WCCFresidentevil2remake5-740x429.jpg" style="width:100%">
+      </div>
+  <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</div>
+
+
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 id="sherry" class="w3-text-white">Sherry Birkin</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-text-light-grey" >Sherry Birkin became a American federal agent attached to the Division of Security Operations when she grew up. As a child, she was placed in protective custody following her parents' deaths during the Raccoon City Destruction Incident, which resulted in a G-Virus infection and the gaining of regenerative abilities.
+    </p>
+
+    <h3 class="w3-container w3-center w3-white">Her Abilites</h3>
+    <p class="w3-wide">Intelligence</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:81%"><center>81%</div></center>
+    </div>
+    <p class="w3-wide">Speed</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:60%"><center>60%</div></center>
+    </div>
+    <p class="w3-wide">Agility</p>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:28px;width:73%"><center>73%</div></center>
+    </div><br>
+    
+    
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-white">Gallery</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://d2skuhm0vrry40.cloudfront.net/2018/articles/2018-08-23-14-26/newt-from-aliens-inspired-the-new-sherry-birkin-in-the-resident-evil-2-remake-1535030818626.jpg/EG11/thumbnail/1920x1080/format/jpg/1991991.jpg" style="width:100%">
+        <img src="https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/sherry-birkin-resident-evil-2-2019-3.9.jpg" style="width:100%">
+        <img src="https://i.ytimg.com/vi/iOlLBm_1KcI/maxresdefault.jpg" style="width:100%">
+
+      </div>
+      <div class="w3-half">
+        <img src="https://thumbs.videogamer.com/lFm8wP5iVz3RbQ0_AuKytqwr9Bs=/1920x1080/smart/https://s.videogamer.com/images/6c00/72bccd9f-863c-4d3d-b79f-1077c101f757_Resi_2_sherry_remake.PNG" style="width:100%">
+        <img src="https://cdn.vox-cdn.com/thumbor/3Y2imrJ9srdfzX162VxTErV-_oE=/0x0:3840x2160/1200x800/filters:focal(1613x773:2227x1387)/cdn.vox-cdn.com/uploads/chorus_image/image/62934249/RE2_999.0.jpg" style="width:100%">
+        <img src="https://residentevil.org/wp-content/uploads/2018/08/RE2_gamescom_03.jpg" style="width:100%">
+        <img src="http://www.gamingaccessweekly.com/wp-content/uploads/2018/12/re2-sherry.png" style="width:100%">
+      </div>
+  <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</div>
+
+
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 id="william" class="w3-text-white">William Birkin</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-text-light-grey" >Dr. William Birkin was a virologist who worked for Umbrella Pharmaceuticals in the 1970s-1990s. The head of the Golgotha Virus research project,[5] he turned against the Umbrella Corporation after failing to achieve a promotion to its executive. The company's attempts to prevent an unauthorized deal with the US military served as a catalyst for the events of the Raccoon City Destruction Incident.
+    </p>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://gameranx.com/wp-content/uploads/2019/01/Resident-Evil-2-Remake-Gameplay-Part-5-2019-01-26-10-27-47.mp4_001683780-720x405.jpg" style="width:100%">
+        <img src="https://cdn.vox-cdn.com/thumbor/wihaGQ2wM5VtlbolZyvatZuhJSk=/0x0:3840x2160/1200x800/filters:focal(1613x773:2227x1387)/cdn.vox-cdn.com/uploads/chorus_image/image/62938587/RE2_941.0.jpg" style="width:100%">
+
+
+      </div>
+      <div class="w3-half">
+        <img src="https://cdn.gamer-network.net/2018/usgamer/resident-evil-2-remake-birkin.jpg" style="width:100%">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb1PF-b5V2PH4kotKzKNXsVikwOG94e-vrWQK7yaa7AjBZCidbnw" style="width:100%">
+  <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</div>
+</div>
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 id="annette" class="w3-text-white">Annette Birkin</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-text-light-grey" >Dr. Annette Birkin was a virologist employed by Umbrella USA, and one of the administrators at their NEST facility beneath Raccoon City. She was the wife of fellow administrator Dr. William Birkin, and mother of Sherry Birkin.
+    </p>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://vignette.wikia.nocookie.net/residentevil/images/0/03/Resident-Evil-2_2018_09-20-18_005.jpg/revision/latest/scale-to-width-down/310?cb=20180920134534" style="width:100%">
+        <img src="https://i.ytimg.com/vi/du1uVtRS3IU/maxresdefault.jpg" style="width:100%">
+
+
+      </div>
+      <div class="w3-half">
+        <img src="https://i.ytimg.com/vi/IXI8isApUTM/maxresdefault.jpg" style="width:100%">
+        <img src="https://cdn2-www.gamerevolution.com/assets/uploads/2019/01/2019011617185208.mp4_snapshot_01.22.000-640x360.png" style="width:100%">
+  <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</div>
+</div></div>
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 id="brian" class="w3-text-white">Brian Irons</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-text-light-grey" >Brian Irons was a Raccoon City police officer who served as its last Chief of Police in 1998. Financially-corrupt, he had intimate knowledge of the Umbrella Corporation's research in the city and received bribes to keep them from being investigated. He was killed by Dr. William Birkin during the Raccoon City Destruction Incident.
+    </p>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/brian-irons-resident-evil-2-2019-0.9.jpg" style="width:100%">
+
+
+      </div>
+      <div class="w3-half">
+        <img src="https://vignette.wikia.nocookie.net/residentevil/images/b/bc/Re2R_-_Irons.png/revision/latest?cb=20180824162332" style="width:100%">
+        <img src="https://residentevil.org/wp-content/uploads/2018/08/RE2_gamescom_02.jpg" style="width:100%">
+  <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</div>
+</div>
+</div>
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 id="marvin" class="w3-text-white">Marvin Branagh</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-text-light-grey" >Lieutenant Marvin Branagh was a police officer who served with the Raccoon Police Department. He may have been a senior in the Operations Bureau, as he was in Leon S. Kennedy's chain of command.
+    </p>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://vignette.wikia.nocookie.net/residentevil/images/2/22/Screenshot_2_-_Resident_Evil_2_remake.png/revision/latest/scale-to-width-down/310?cb=20180612031940" style="width:100%">
+        <img src="https://i.ytimg.com/vi/cSrgOVPnCJY/maxresdefault.jpg" style="width:100%">
+
+
+      </div>
+      <div class="w3-half">
+        <img src="http://123movienews.com/wp-content/uploads/2018/12/Marvin-Branagh-Resident-Evil-2-2019.jpg" style="width:100%">
+        <img src="https://www.telegraph.co.uk/content/dam/gaming/2019/01/22/RESIDENT-EVIL-2_20190115214904_trans_NvBQzQNjv4BqNJjoeBT78QIaYdkJdEY4CnGTJFJS74MYhNY6w3GNbO8.png?imwidth=480" style="width:100%">
+  <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</div></div></div>
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 id="hunk" class="w3-text-white">HUNK</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-text-light-grey" > HUNK is the code-name of a Special Agent of the Umbrella Security Service, who was the leader of the ill-fated Alpha Team in the employment of Umbrella. Cold, silent, and devoid of emotion, he is a ruthless operative. He and the UBCS Sergeant, Nikolai Zinoviev were considered to be "rivals".
+    </p>HUNK
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://vignette.wikia.nocookie.net/residentevil/images/4/4f/RE2make_HUNK_Reveal.jpeg/revision/latest/scale-to-width-down/310?cb=20190113064442" style="width:100%">
+        <img src="https://cdn.gamerant.com/wp-content/uploads/resident-evil-2-hunk-tofu-screenshots.jpg.optimal.jpg" style="width:100%">
+
+
+      </div>
+      <div class="w3-half">
+        <img src="https://i.ytimg.com/vi/jF9VHvmjTWU/maxresdefault.jpg" style="width:100%">
+        <img src="https://sm.ign.com/ign_ap/video/r/resident-e/resident-evil-2-remake-gameplay-surviving-hunks-4th-survivor_ezcn.jpg" style="width:100%">
+  <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</div></div></div>
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 id="tofu" class="w3-text-white">Tofu</h2>
+    <hr style="width:200px" class="w3-opacity">Tofu is a secret character from Resident Evil 2.
+    <p class="w3-text-light-grey" >
+    </p>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://i.ytimg.com/vi/aAYxP01qedw/maxresdefault.jpg" style="width:100%">
+        <img src="https://cdn.gamerant.com/wp-content/uploads/resident-evil-2-remake-tofu-bonus-mode.jpg.optimal.jpg" style="width:100%">
+
+
+      </div>
+      <div class="w3-half">
+        <img src="https://attackofthefanboy.com/wp-content/uploads/2019/01/tofu-resident-evil-2-remake.jpg" style="width:100%">
+        <img src="https://i.ytimg.com/vi/aA_3trnM5jQ/maxresdefault.jpg" style="width:100%">
+  <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</div></div></div>
+
+
+
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 id="ben" class="w3-text-white">Ben Bertolucci</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-text-light-grey" >Ben Bertolucci was an American freelancer investigative journalist who worked in Raccoon City prior to the 1998 Raccoon City Destruction Incident. Though he was not from Raccoon City, he visited Arklay County frequently enough he was familiar with local reporter, Alyssa Ashcroft.[note 1] He was arrested when the Chief of Police, Brian Irons, became the target of investigation.
+    </p>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://vignette.wikia.nocookie.net/residentevil/images/0/0a/Ben.jpg/revision/latest?cb=20120516212140" style="width:100%">
+        <img src="" style="width:100%">
+
+
+      </div>
+      <div class="w3-half">
+        <img src="https://www.residentevil.net/share/chro/image/dictionary/ben_yt.jpg" style="width:100%">
+        <img src="https://i.ytimg.com/vi/wLW9nQ0GjbY/maxresdefault.jpg" style="width:100%">
+  <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</div></div></div>
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 id="robert" class="w3-text-white">Robert Kendo</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-text-light-grey" >Robert Kendo was a Japanese-American owner of the Kendo Gun Shop in Raccoon City. He was a close friend of Special Tactics And Rescue Service member Barry Burton, and helped to create custom guns for Barry and the other S.T.A.R.S. members.
+    </p>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://vignette.wikia.nocookie.net/residentevil/images/f/f7/Resident-Evil-2_2018_12-01-18_014.jpg/revision/latest/scale-to-width-down/310?cb=20181205155914" style="width:100%">
+        <img src="https://cdn.vox-cdn.com/thumbor/gcTwQBGoMWCChq4YguIoZ-fCgNo=/0x0:3840x2160/1200x800/filters:focal(2565x397:3179x1011)/cdn.vox-cdn.com/uploads/chorus_image/image/62886673/RE2_Dec_Screen_14.0.jpg" style="width:100%">
+
+
+      </div>
+      <div class="w3-half">
+        <img src="https://gameplay-rocks.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2018/12/07175233/Resident-Evil-2-Remake-NEW-Leon-Kennedy-Gameplay-Robert-Kendo-Reveal-60FPS-No-Commentary.jpg" style="width:100%">
+        <img src="https://i.pinimg.com/originals/5f/65/d0/5f65d0b2a8a48fe813b8d9ab18caf829.jpg" style="width:100%">
+  <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</div></div></div>
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 id="emma" class="w3-text-white">Emma Kendo</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-text-light-grey" >Emma Kendo was the daughter of Robert Kendo. At some point during the Raccoon City Destruction Incident, she was infected with the T-Virus whilst her mother transformed.
+
+She and her father were encountered by Leon S. Kennedy and Ada Wong after they left the Raccoon City Police Station. Ada moved to euthanise her but her father moved to keep her safe. So severe was her infection, she could barely move, barely speak and was already showing signs of turning. How she’s became infected is unknown, but her father hints at the fact that she may have been bitten whilst they were outside the safety of their home and the Gun Shop.
+
+With reluctance, Robert took her back to their home, asking for privacy before he made the difficult decision to put her out of her misery.
+    </p>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://vignette.wikia.nocookie.net/residentevil/images/a/af/RE2R_-_Zombie_Girl.png/revision/latest/scale-to-width-down/310?cb=20180921201848" style="width:100%">
+
+  <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</div></div></div>
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 id="elliot" class="w3-text-white">Elliot Edward</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-text-light-grey" >Elliot Edward was a police officer for the Raccoon Police Department. Edward was one of dozens of police officers trapped within the besieged Raccoon Police Station during the Raccoon City Destruction Incident. He was ultimately killed on 29 September.
+    </p>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://vignette.wikia.nocookie.net/residentevil/images/b/b0/Elliot_RE2make.png/revision/latest/scale-to-width-down/310?cb=20180613004331" style="width:100%">
+  <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</div></div></div>
+
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 id="katherine" class="w3-text-white">Katherine Warren</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p class="w3-text-light-grey" >Katherine Warren was the daughter of Raccoon City's mayor, Michael Warren.
+    </p>
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="https://vignette.wikia.nocookie.net/residentevil/images/2/28/RE2R_-_Warren.png/revision/latest/scale-to-width-down/310?cb=20180921203229" style="width:100%">
+
+
+      </div>
+      <div class="w3-half">
+        <img src="https://s.newsweek.com/sites/www.newsweek.com/files/styles/full/public/2019/01/28/resident-evil-2-ghost-survivors-mayor-daughter-dlc-release-date.jpg" style="width:100%">
+  <a href="#" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
